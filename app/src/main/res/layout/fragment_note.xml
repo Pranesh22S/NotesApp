@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <data>
+        <variable
+            name="viewModel"
+            type="com.example.notesapplicationkt.NoteViewModel" />
+    </data>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="0dp"
+        >
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?attr/colorPrimary"
+            android:minHeight="56dp"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            app:navigationIcon="@drawable/baseline_navigate_before_24"
+            app:navigationIconTint="@color/white"
+            app:title="Add Note"
+            app:titleTextColor="@color/white" />
+        <EditText
+            android:id="@+id/editTextNote"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter your note here"
+            android:inputType="text"
+            android:textSize="20sp" />
+        <Button
+            android:id="@+id/dateButton"
+            android:layout_width="128dp"
+            android:layout_height="wrap_content"
+            android:text="Button" />
+        <Button
+            android:id="@+id/button"
+            android:layout_width="128dp"
+            android:layout_height="wrap_content"
+            android:text="Save" />
+
+    </LinearLayout>
+            </layout>

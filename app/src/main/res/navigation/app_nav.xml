@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/app_nav"
+    app:startDestination="@id/mainFragment">
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="com.example.notesapplicationkt.MainFragment"
+        android:label="Main Fragment">
+    <action
+        android:id="@+id/action_MainFragment_to_NoteFragment"
+        app:destination="@id/noteFragment" />
+        />
+    </fragment>
+    <fragment
+        android:id="@+id/noteFragment"
+        android:name="com.example.notesapplicationkt.NoteFragment"
+        android:label="NoteFragment">
+        <argument
+            android:name="id"
+            app:argType="integer" />
+        <argument
+            android:name="note"
+            app:argType="string" />
+        <argument
+            android:name="isAdd"
+            app:argType="boolean" />
+<!--        <argument-->
+<!--            android:name="date"-->
+<!--            app:argType="date" />-->
+    </fragment>
+</navigation>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
